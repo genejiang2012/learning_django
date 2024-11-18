@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,10 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '3VKmxwHQ',
         'HOST': '192.168.10.104',
-        'PORT': '3306'
+        'PORT': '3306',
+        'OPTIONS': {
+            'ssl': {'verify_cert': False}
+        }        
     }
 }
 
